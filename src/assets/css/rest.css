@@ -1,0 +1,165 @@
+body {
+  box-sizing: border-box;
+  height: 100%;
+  color: #464646;
+  font-size: 28rpx;
+  font-family: 'PingFang SC', Helvetica, 'STHeiti STXihei', 'Microsoft YaHei',
+    Tohoma, Arial, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  padding: 40rpx;
+  height: 100%;
+  background: #000000;
+  background-color: #f2f2f2;
+}
+button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #464646;
+  font-size: 28rpx;
+}
+button::after {
+  border: none;
+}
+.no-more {
+  padding: 60rpx;
+  color: #8f8f8f;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.input-bar {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10rpx;
+  width: 100%;
+  border-top: 2rpx solid #e6e6e6;
+  background: #ffffff;
+}
+.input-bar .text {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex: 1;
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  padding: 0 10rpx;
+  height: 60rpx;
+  border: 1px solid #e6e6e6;
+  border-radius: 10rpx;
+}
+.input-bar .button {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  /* background: #ff0000; */
+  color: #8f8f8f;
+}
+
+.to-indexpage {
+  position: fixed;
+  bottom: 300rpx;
+  left: -1rpx;
+  z-index: 100;
+}
+.link-to-index {
+  display: block;
+  width: 150rpx;
+  height: 50rpx;
+  border-top-right-radius: 35rpx;
+  border-bottom-right-radius: 35rpx;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 50rpx;
+}
+
+/* 图片裁剪 */
+.cropper_main_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  width: 750rpx;
+  height: 100%;
+}
+.cropper_main_container.hidden {
+  display: none;
+}
+
+.cropper_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* button */
+.cropper_toolbar {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+.cropper_toolbar .button_item {
+  position: absolute;
+  top: 0;
+  width: 200rpx;
+}
+
+.crop_image_button {
+  right: 0;
+  color: #1fb922;
+}
+.cancel_button {
+  left: 0;
+}
+
+/* canvas */
+
+.cropper_canvas_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* opacity:0隐藏，如果想看就设置为1，只能在测试机能看到，真机上canvas层级在最高层 */
+.cropper_canvas_container .move_item {
+  z-index: 100;
+  display: block;
+  border-radius: 50%;
+  background: white;
+  opacity: 1;
+  transition: display 0.33s;
+
+  will-change: display;
+}
+
+.cropper_canvas_container .canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 因为display:none在真机上会造成无法截取图片，所以这里是通过移到显示区域外来达到隐藏效果的 */
+.original_canvas {
+  position: absolute;
+  top: 100vh;
+  left: 750rpx;
+}

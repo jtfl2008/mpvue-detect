@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/discover/index",
+    "pages/authorization/index",
+    "pages/detect/index",
+    "pages/detect/goods",
+    "pages/detect/detect",
+    "pages/detect/other",
+    "pages/my/myComment",
+    "pages/post/index",
+    "pages/post/postPublish",
+    "pages/post/postDetail",
+    "pages/my/myPost",
+    "pages/notice/index",
+    "pages/my/index",
+    "pages/logs/index",
+    "pages/counter/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/discover/index"
+      },
+      {
+        "pagePath": "pages/detect/index"
+      },
+      {
+        "pagePath": "pages/post/index"
+      },
+      {
+        "pagePath": "pages/notice/index"
+      },
+      {
+        "pagePath": "pages/my/index"
+      }
+    ]
+  }
+}
