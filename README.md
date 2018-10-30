@@ -20,13 +20,14 @@ npm run build --report
 
 ## 使用到的技术栈和插件
 
-1.  技术栈：小程序， mpvue，es6
+1.  技术栈：小程序， mpvue，es6 等
 2.  依赖插件
     1.  [mpvue-entry](https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2FF-loat%2Fmpvue-entry)：vue-router 兼容的路由写法
     2.  [mpvue-router-patch](https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2FF-loat%2Fmpvue-entry)：集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新
     3.  scss：预处理器
     4.  vuex: 进行状态管理
     5.  [flyio](https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2Fwendux%2Ffly): 数据交互
+    6.  [vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate)：数据持久处理
 
 ## 目录结构
 
